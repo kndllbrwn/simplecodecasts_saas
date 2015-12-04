@@ -5,7 +5,10 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to :plan
   has_one :profile
+<<<<<<< HEAD
   
+=======
+>>>>>>> development
   attr_accessor :stripe_card_token
   def save_with_payment
     if valid?
